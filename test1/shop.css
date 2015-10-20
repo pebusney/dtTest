@@ -1,0 +1,114 @@
+@media screen and (max-width:320px) and (max-height: 480px){/*iph4*/
+    html{
+      font-size: 100px;
+    }
+}
+@media screen and (min-width:320px) and (max-height: 700px) and (max-width:375px){/*iph5*/
+    html{
+      font-size: 130px;
+    }
+}
+@media screen and (min-width:375px) and (max-width:414px){/*iph6*/
+    html{
+      font-size: 150px;
+    }
+}
+@media screen and (min-width:414px) and (max-width:749px){/*iph6+*/
+    html{
+      font-size: 160px;
+    }
+}
+@media screen and (min-width:750px){/*pad*/
+    html{
+      font-size: 200px;
+    }
+}
+@media screen and (min-width:900px){/*kindle*/
+    html{
+      font-size: 550px;
+    }
+}
+body {
+  margin: 0;
+  padding: 0;
+  font: 100% arial,"黑体","Hiragino Sans GB","Microsoft Yahei",sans-serif;
+  color: #333;
+  background: #eee;
+  -webkit-font-smoothing: antialiased;
+}
+ul,li{margin: 0;padding: 0;}
+span {display: inline-block;/*padding: .09rem 0;*/}
+i{font-style:normal;display: inline-block;}
+.font1 {font-size: .14rem;}
+.font12 {font-size: .12rem;}
+.font13 {font-size: .13rem;}
+#header{font-size: .16rem;}
+.font-red{color: red;}
+.font-grey{color: grey;}
+.yuanjia{text-decoration: line-through;}
+li {list-style: none;}
+.clearfix {
+    zoom: 1;
+}
+.clearfix:after {
+  height: 0;
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+.fl {float: left;}
+.fr {float: right;}
+.content-out {width: 100%; margin-top: .1rem;background-color: #fff;}
+.content1 {
+  padding-bottom: .1rem;
+}
+.content {
+  font-size: .14rem;
+  width: 92%;
+  margin: 0 auto;
+}
+.content1 .left, .content1 .right {
+  width: 48%;
+  height: auto;
+}
+.content1 img {
+  width: 100%;
+}
+.content2 img {
+  width: 35%;
+}
+.content ul .li-right {
+  /*margin-right: 0;*/
+  display: inline-block;
+  width: 61%;
+}
+.content2 ul li, .content3 ul li {
+  padding: .1rem 0;
+  border-top: .01rem solid #e8e8e8;
+}
+.content3 ul li {
+  position: relative;
+}
+.buttom {position: relative;bottom: -.17rem;}
+.content3 img {
+  width: 100%;
+}
+.tips {
+  display: inline-block;
+  position: absolute;
+  top: .3rem;
+  padding: 0 .05rem;
+  background-color:rgba(0,0,0,0.6);
+  color: #fff;
+}
+
+.content-out1 {
+  position: fixed;
+  background-color: #F8F8FF;
+  top: 0;
+  width: 100%;
+  height: .4rem;
+  line-height: .4rem;
+  border-bottom: .01rem solid #e8e8e8;
+}

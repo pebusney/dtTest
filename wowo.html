@@ -1,0 +1,897 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html;" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="yes" name="apple-touch-fullscreen" />
+<meta content="telephone=no,email=no" name="format-detection" />
+<meta content="fullscreen=yes,preventMove=no" name="ML-Config" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no; email=no" />
+<meta name="x5-fullscreen" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>“铲屎官”摄影师和流浪喵的奇妙瞬间</title>
+<script type="text/javascript">
+    //打点
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-19056403-7']);
+    _gaq.push(['_setDomainName', 'duitang.com']);
+    _gaq.push(['_trackPageview']);
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    // 统一打点方法
+    function gaq(trc){
+      console.log(trc)
+      // 新增堆糖内部打点 kibana
+      new Image().src = "http://da.dtxn.net/da.gif?url="+window.location.hostname+window.location.pathname+"&kibana="+trc;
+      typeof _gaq != "undefined" && _gaq && _gaq.push(['_trackPageview', trc]);
+    }
+</script>
+
+<style>
+  html,body{font:12px 'microsoft yahei';overflow:hidden;width:100%;height:100%;margin:0;padding:0;}
+img{vertical-align:bottom;}
+.load{font-size:50px;position:relative;z-index:9999;width:100%;height:100%;text-align:center;color:#fff;background:rgba(0,0,0,.8);}
+ul,li{margin:0;padding:0;list-style:none;}
+h1,h2,h3,h4,p,figure{margin:0;}
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.music{position:absolute;width:31px;height:31px;z-index:2;top:50px;right:25px;}
+.music.play{-webkit-animation:music 1.5s linear infinite;animation:music 1.5s linear infinite;}
+a.arr{position:absolute;z-index:100;bottom:38px;left:50%;margin-left:-15px;-webkit-animation:arr2 1.6s linear infinite;animation:arr2 1.6s linear infinite;width:30px;}
+a.arr img{width:100%;}
+.load{
+  background:#fff;
+}
+.loader{position:absolute;top:0;right:0;bottom:0;left:0;width:31px;height:31px;margin:auto;}
+.loader i{position:absolute;display:block;width:15px;height:15px;border-radius:50%;}
+.loader i:before,.loader i:after{position:absolute;display:block;width:inherit;height:inherit;content:'';border-radius:inherit;}
+.loader i:first-child:before{-webkit-animation:rotate-top-left 1.5s linear infinite;-moz-animation:rotate-top-left 1.5s linear infinite;background:rgba(52,149,221,.9);}
+.loader i:first-child:after{-webkit-animation:rotate-top-right 1.5s linear infinite;-moz-animation:rotate-top-right 1.5s linear infinite;background:rgba(225,73,44,.9);}
+.loader i:last-child:before{-webkit-animation:rotate-bottom-left 1.5s linear infinite;-moz-animation:rotate-bottom-left 1.5s linear infinite;background:rgba(249,206,43,.9);}
+.loader i:last-child:after{-webkit-animation:rotate-bottom-right 1.5s linear infinite;-moz-animation:rotate-bottom-right 1.5s linear infinite;background:rgba(0,153,117,.9);}
+.wrap{position:absolute;top:0;left:0;overflow:hidden;width:100%;height:100%;}
+.cont{width:100%;height:100%;-webkit-transition:.5s ease;transition:.5s ease;-webkit-transform:translate3d(0%,0,0) scale3d(1,1,1);transform:translate3d(0%,0,0) scale3d(1,1,1);-webkit-backface-visibility:hidden;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;}
+.cont section{position:relative;overflow:hidden;width:640px;height:100%;}
+.sect-inner{width:320px;height:460px;position:absolute;margin:auto;top:0;left:0;right:0;bottom:0;font-size:20px;line-height:1.5;text-align:center;z-index:1;}
+.bg{position:absolute;left:0;top:0;width:100%;height:100%;}
+.cur .bg{-webkit-animation:scaleBig 3.3s linear both;animation:scaleBig 3.3s linear both;}
+.s1 .bg{background-image:url(http://img4q.duitang.com/uploads/people/201509/30/20150930132702_sXZPf.jpeg);background-size:cover;}
+.s1 .im1{float:left;width:91px;margin-left:5px;opacity:0;}
+.s1 .im2{width:213px;float:right;opacity:0;}
+.s1 .im3{width:213px;margin-top:12px;bottom:0;opacity:0;}
+.s1 .im4{width:263px;opacity:0;    margin-top: 5px;}
+.cur.s1 .im1{animation:fadeInLeft .7s .4s forwards;-webkit-animation:fadeInLeft .7s .4s forwards;}
+.cur.s1 .im2{animation:fadeInRight .9s forwards;-webkit-animation:fadeInRight .9s forwards;}
+.cur.s1 .im3{-webkit-animation:fadeInUp .8s .7s forwards;animation:fadeInUp .8s .7s forwards;}
+.cur.s1 .im4{-webkit-animation:fadeInUp .8s .9s forwards;animation:fadeInUp .8s .9s forwards;}
+.s2 .bg{background-image:url(http://img4q.duitang.com/uploads/people/201509/30/20150930133753_FnAJQ.jpeg);background-size:cover;}
+.s2 h3{color:#fff;font-size:18px;line-height:25px;opacity:0;font-weight:normal;}
+.s2 .img-box{width:96%;margin:20px auto 0;box-sizing:border-box;position:relative;left:2%;}
+.s2 .img-box:after{content:'';display:block;height:0;clear:both;}
+.s2 li{float:left;width:33%;margin-bottom:10px;}
+.s2 li img{width:100%;padding-right:10px;opacity:0;}
+.cur.s2 h3{-webkit-animation:fadeInDown 1s 1s forwards;animation:fadeInDown 1s 1s forwards;}
+.cur.s2 li img{-webkit-animation-name:flipInY;animation-name:flipInY;-webkit-animation-duration:.7s;animation-duration:.7s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;}
+.cur.s2 li:nth-child(1) img{animation-delay:.3s;-webkit-animation-delay:.3s;}
+.cur.s2 li:nth-child(2) img{animation-delay:.4s;-webkit-animation-delay:.4s;}
+.cur.s2 li:nth-child(3) img{animation-delay:.5s;-webkit-animation-delay:.5s;}
+.cur.s2 li:nth-child(4) img{animation-delay:.5s;-webkit-animation-delay:.5s;}
+.cur.s2 li:nth-child(5) img{animation-delay:.7s;-webkit-animation-delay:.7s;}
+.cur.s2 li:nth-child(6) img{animation-delay:.9s;-webkit-animation-delay:.9s;}
+.cur.s2 li:nth-child(7) img{animation-delay:.7s;-webkit-animation-delay:.7s;}
+.cur.s2 li:nth-child(8) img{animation-delay:.9s;-webkit-animation-delay:.9s;}
+.cur.s2 li:nth-child(9) img{animation-delay:1.1s;-webkit-animation-delay:1.1s;}
+.s3 .bg{background-image:url(http://img4q.duitang.com/uploads/people/201509/30/20150930133833_hYtUM.jpeg);background-size:cover;}
+.s3 .tx1{color:#fff;font-size:14px;display:block;opacity:0;}
+.s3 .tx2{color:#fff;font-size:24px;display:block;opacity:0;}
+.s3 .tx3{font-size:12px;color:#fff;display:block;margin-top:20px;opacity:0;}
+.s3 .im1{width:289px;display:block;margin:25px auto;opacity:0;}
+.s3 .btn{opacity:0;display:block;}
+.s3 .im2{display:block;width:116px;margin:0 auto;}
+.cur.s3 .tx1{-webkit-animation:fadeInUp .9s forwards;animation:fadeInUp .9s forwards;}
+.cur.s3 .tx2{-webkit-animation:fadeInUp .9s .3s forwards;animation:fadeInUp .9s .3s forwards;}
+.cur.s3 .tx3{-webkit-animation:fadeInUp .9s 1.4s forwards;animation:fadeInUp .9s 1.4s forwards;}
+.cur.s3 .im1{-webkit-animation:zoomIn 1s .7s forwards;animation:zoomIn 1s .7s forwards;}
+.cur.s3 .im2{-webkit-animation:tada .8s 1.4s forwards;animation:tada .8s 1.4s forwards;}
+.cur.s3 .btn{-webkit-animation:fadeInUp .9s .8s forwards;animation:fadeInUp .9s .8s forwards;}
+.s4 .bg{background-image:url(http://img4q.duitang.com/uploads/people/201509/30/20150930133921_jwncE.jpeg);background-size:cover;}
+.s4 .im1{width:140px;opacity:0;margin-top:18px;}
+.s4 .im2{width:100%;display:block;}
+.s4 .share{width:25px;position:absolute;top:15px;right:15px;height:25px;border:1px solid #fff;border-radius:50%;-webkit-border-radius:50%;box-sizing:border-box;-webkit-box-sizing:border-box;padding-top:6px;z-index:2;}
+.s4 .share img{width:14px;display:block;vertical-align:middle;margin:0 auto;}
+.s4 .link{position:absolute;width:90px;left:50%;margin-left:-45px;top:50%;}
+.s4 .im3{width:122px;position:absolute;left:-16px;top:-20px;opacity:0;}
+.s4 .im4{width:143px;position:absolute;bottom:0;left:50%;margin-left:-71px;}
+.cur.s4 .im1{-webkit-animation:fadeInDown .8s forwards;animation:fadeInDown .8s forwards;}
+.cur.s4 .im3{/*-webkit-animation:flash 3s linear infinite;animation:flash 3s linear infinite;*/}
+.cur.s4 .share{-webkit-animation:tada 1s linear infinite;animation:tada 1s linear infinite;}
+.img-modal{position:absolute;width:100%;height:100%;top:0;left:0;display:none;background:rgba(0,0,0,.85);z-index: 999;}
+.img-modal .modal-inner .close{position:absolute;top:0;right:5%;width:26px;z-index:2;}
+.img-modal .modal-inner{position:absolute;width:320px;height:460px;left:0;right:0;top:0;bottom:0;margin:auto;display:box;display:-webkit-box;-webkit-box-align:center;box-align:center;-webkit-box-pack:center;box-pack:center;}
+.img-modal .modal-inner img{width:270px;}
+.pg-fix-ft{position: fixed;left: 0;bottom: 0;right: 0;z-index: 8888;margin: 0 auto;}
+.pg-fix-ft .pg-share-content{position:absolute;left:0;right:0;bottom:0;z-index:8889;
+background-color:rgba(0,0,0,.5);-webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+  font-size:0;word-spacing:-1px;text-align:center;}
+  .pg-fix-ft .pg-share-content.open{
+    -webkit-transform: none;
+    transform: none;
+  }
+.pg-fix-ft .pg-share-content a{font-size:12px;line-height:30px;color:#999;display:inline-block;width:90px;height:90px;background-repeat:no-repeat;background-size:contain;background-position:100% -10px;}
+.pg-fix-ft .pg-share-content a span{display:block;color:#fff;font-size:12px;line-height:16px;margin-top:65px;}
+.pg-fix-ft .pg-share-content a.btn-share-weibo{background-image:url("http://img4q.duitang.com/uploads/people/201507/27/20150727121900_BF8Gs.png");}
+.pg-fix-ft .pg-share-content a.btn-share-wechat{background-image:url("http://img4q.duitang.com/uploads/people/201507/27/20150727121758_QrYdR.png");}
+.pg-fix-ft .pg-share-content a.btn-share-wechat-circle{background-image:url("http://img4q.duitang.com/uploads/people/201507/27/20150727121652_UkJSX.png");}
+.wx-tips{display:none;position:fixed;z-index:9000;left:0;right:0;bottom:0;top:0;margin:0 auto;background:rgba(0,0,0,0.7);}
+.wx-tips .tips{text-align:right;}
+.wx-tips .tips img{width:70%;}
+.app-download{
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  left: 0;
+  padding:5px 10px;
+  background-color:rgba(0, 0, 0, 0.2);
+  z-index:10;
+  display:none;
+}
+.app-download img{
+  width:114px;
+}
+.app-download a{
+  float: right;
+  height: 25px;
+  line-height: 18px;
+  margin-top: 10px;
+  text-decoration: none;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius:4px;
+  -webkit-border-radius:4px;
+  padding: 3px 10px;
+}
+@-webkit-keyframes music{
+  0%{-webkit-transform:rotate(0);transform:rotate(0);}
+  100%{-webkit-transform:rotate(360deg);transform:rotate(360deg);}
+}
+@keyframes music{
+  0%{-webkit-transform:rotate(0);transform:rotate(0);}
+  100%{-webkit-transform:rotate(360deg);transform:rotate(360deg);}
+}
+@-webkit-keyframes shake{
+  0%,100%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+  10%,30%,50%,70%,90%{-webkit-transform:translate3d(-10px,0,0);transform:translate3d(-10px,0,0)}
+  20%,40%,60%,80%{-webkit-transform:translate3d(10px,0,0);transform:translate3d(10px,0,0)}
+}
+@keyframes shake{
+  0%,100%{-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+  10%,30%,50%,70%,90%{-webkit-transform:translate3d(-10px,0,0);-ms-transform:translate3d(-10px,0,0);transform:translate3d(-10px,0,0)}
+  20%,40%,60%,80%{-webkit-transform:translate3d(10px,0,0);-ms-transform:translate3d(10px,0,0);transform:translate3d(10px,0,0)}
+}
+@-webkit-keyframes arr{
+  0%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1;}
+  50%{-webkit-transform:translateX(-10px);transform:translateX(-10px);}
+  100%{-webkit-transform:translateX(0);transform:translateX(0);}
+}
+@keyframes arr{
+  0%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1;}
+  50%{-webkit-transform:translateX(-10px);transform:translateX(-10px);}
+  100%{-webkit-transform:translateX(0);transform:translateX(0);}
+}
+@-webkit-keyframes arr1{
+  0%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1;}
+  50%{-webkit-transform:translateY(-10px);transform:translateY(-10px);}
+  100%{-webkit-transform:translateY(0);transform:translateY(0);}
+}
+@keyframes arr1{
+  0%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1;}
+  50%{-webkit-transform:translateY(-10px);transform:translateY(-10px);}
+  100%{-webkit-transform:translateY(0);transform:translateY(0);}
+}
+@-webkit-keyframes arr2{
+  0%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1;}
+  70%{-webkit-transform:translateY(30px);transform:translateY(30px);opacity:0;}
+  100%{opacity:0;}
+}
+@keyframes arr2{
+  0%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1;}
+  70%{-webkit-transform:translateY(30px);transform:translateY(30px);opacity:0;}
+  100%{opacity:0;}
+}
+@-webkit-keyframes scaleBig{
+  0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}
+  100%{-webkit-transform:scale3d(1.08,1.08,1.08);transform:scale3d(1.08,1.08,1.08);}
+}
+@keyframes scaleBig{
+  0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}
+  100%{-webkit-transform:scale3d(1.08,1.08,1.08);transform:scale3d(1.08,1.08,1.08);}
+}
+
+/*animation.css*/
+@-webkit-keyframes fadeInRight{
+  from{opacity:0;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0);}
+  to{opacity:1;-webkit-transform:none;transform:none;}
+}
+@keyframes fadeInRight{
+  from{opacity:0;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0);}
+  to{opacity:1;-webkit-transform:none;transform:none;}
+}
+@-webkit-keyframes fadeInLeft{
+  from{opacity:0;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);}
+  to{opacity:1;-webkit-transform:none;transform:none;}
+}
+@keyframes fadeInLeft{
+  from{opacity:0;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);}
+  to{opacity:1;-webkit-transform:none;transform:none;}
+}
+@-webkit-keyframes fadeInUp{
+  from{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);}
+  to{opacity:1;-webkit-transform:none;transform:none;}
+}
+@keyframes fadeInUp{
+  from{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);}
+  to{opacity:1;-webkit-transform:none;transform:none;}
+}
+@-webkit-keyframes flipInY{
+  from{-webkit-transform:perspective(400px) rotate3d(0,1,0,90deg);transform:perspective(400px) rotate3d(0,1,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0;}
+  40%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-20deg);transform:perspective(400px) rotate3d(0,1,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;}
+  60%{-webkit-transform:perspective(400px) rotate3d(0,1,0,10deg);transform:perspective(400px) rotate3d(0,1,0,10deg);opacity:1;}
+  80%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-5deg);transform:perspective(400px) rotate3d(0,1,0,-5deg);}
+  to{-webkit-transform:perspective(400px);transform:perspective(400px);opacity:1;}
+}
+@keyframes flipInY{
+  from{-webkit-transform:perspective(400px) rotate3d(0,1,0,90deg);transform:perspective(400px) rotate3d(0,1,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0;}
+  40%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-20deg);transform:perspective(400px) rotate3d(0,1,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;}
+  60%{-webkit-transform:perspective(400px) rotate3d(0,1,0,10deg);transform:perspective(400px) rotate3d(0,1,0,10deg);opacity:1;}
+  80%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-5deg);transform:perspective(400px) rotate3d(0,1,0,-5deg);}
+  to{-webkit-transform:perspective(400px);transform:perspective(400px);opacity:1;}
+}
+@-webkit-keyframes fadeInDown{
+  from{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);}
+  to{opacity:1;-webkit-transform:none;transform:none;}
+}
+@keyframes fadeInDown{
+  from{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);}
+  to{opacity:1;-webkit-transform:none;transform:none;}
+}
+@-webkit-keyframes zoomIn{
+  from{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3);}
+  50%{opacity:1;}
+  100%{opacity:1;}
+}
+@keyframes zoomIn{
+  from{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3);}
+  50%{opacity:1;}
+  100%{opacity:1;}
+}
+@-webkit-keyframes tada{
+  from{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}
+  10%,20%{-webkit-transform:scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);transform:scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);}
+  30%,50%,70%,90%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg);transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg);}
+  40%,60%,80%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);}
+  to{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}
+}
+@keyframes tada{
+  from{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}
+  10%,20%{-webkit-transform:scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);transform:scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);}
+  30%,50%,70%,90%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg);transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg);}
+  40%,60%,80%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);}
+  to{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}
+}
+@-webkit-keyframes flash{
+  from,50%,to{opacity:1;}
+  25%,75%{opacity:0;}
+}
+@keyframes flash{
+  from,50%,to{opacity:1;}
+  25%,75%{opacity:0;}
+}
+</style>
+</head>
+<body>
+  <h1 for-qq-share style="display:none">“铲屎官”摄影师和流浪喵的奇妙瞬间</h1>
+  <h3 for-qq-share style="display:none">“铲屎官”摄影师和流浪喵的奇妙瞬间</h3>
+  <div class="load">
+      <div class="loader">
+          <img src="http://img4q.duitang.com/uploads/people/201507/09/20150709075658_Y2frX.gif" alt="">
+      </div>
+  </div>
+  <div class="wrap">
+       <a class="arr"><img src="http://img4q.duitang.com/uploads/people/201509/30/20150930132302_uZkS4.png"></a>
+    <div class="cont">
+      <section class="s1">
+        <div class="sect-inner">
+            <img src="http://img4q.duitang.com/uploads/people/201509/30/20150930132533_yFXKa.png" class="im1">
+            <img src="http://img4q.duitang.com/uploads/people/201509/30/20150930132552_v4StA.png" class="im2">
+            <img src="http://img4q.duitang.com/uploads/people/201509/30/20150930132611_GSHAE.png" class="im3">
+            <img src="http://img4q.duitang.com/uploads/people/201509/30/20150930132635_ZzGBE.png" class="im4">
+        </div>
+        <span class="bg"></span>
+      </section>
+      <section class="s2">
+        <div class="sect-inner">
+          <h3>点击Ta们<br>看看我和Ta们的二三事</h3>
+          <ul class="img-box">
+            <li data-img="http://img4q.duitang.com/uploads/people/201509/30/20150930153416_hEdrj.png">
+              <img src="http://img4q.duitang.com/uploads/people/201509/30/20150930132847_CdtFX.jpeg">
+            </li>
+            <li data-img="http://img4q.duitang.com/uploads/people/201509/30/20150930153455_XSrad.png">
+              <img src="http://img4q.duitang.com/uploads/people/201509/30/20150930132944_FVeKY.jpeg">
+            </li>
+            <li data-img="http://img4q.duitang.com/uploads/people/201509/30/20150930153517_4AUSV.png">
+              <img src="http://img4q.duitang.com/uploads/people/201509/30/20150930133123_45GzB.jpeg">
+            </li>
+            <li data-img="http://img4q.duitang.com/uploads/people/201509/30/20150930153611_MSFyL.png">
+              <img src="http://img4q.duitang.com/uploads/people/201509/30/20150930133207_RcdXv.jpeg">
+            </li>
+            <li data-img="http://img4q.duitang.com/uploads/people/201509/30/20150930153545_LKWC5.png">
+              <img src="http://img4q.duitang.com/uploads/people/201509/30/20150930133248_ZfhXN.jpeg">
+            </li>
+            <li  data-img="http://img4q.duitang.com/uploads/people/201509/30/20150930153629_WTPUw.png">
+              <img src="http://img4q.duitang.com/uploads/people/201509/30/20150930133342_Xs5iC.jpeg">
+            </li>
+            <li data-img="http://img4q.duitang.com/uploads/people/201509/30/20150930153648_HEJhu.png">
+              <img src="http://img4q.duitang.com/uploads/people/201509/30/20150930133503_Xh3Rc.jpeg">
+            </li>
+            <li data-img="http://img4q.duitang.com/uploads/people/201509/30/20150930153706_TxABP.png">
+              <img src="http://img4q.duitang.com/uploads/people/201509/30/20150930133619_ZR45C.jpeg">
+            </li>
+            <li data-img="http://img4q.duitang.com/uploads/people/201509/30/20150930153727_Ykhxa.png">
+              <img src="http://img4q.duitang.com/uploads/people/201509/30/20150930133705_MRKP8.jpeg">
+            </li>
+          </ul>
+        </div>
+        <span class="bg"></span>
+      </section>
+      <section class="s3">
+        <div class="sect-inner">
+            <span class="tx1">
+              购买“喵呜不停”原创写真明信片，
+            </span>
+            <span class="tx2">
+              为流浪猫献上一份爱。
+            </span>
+            <img src="http://img4q.duitang.com/uploads/people/201509/30/20150930134441_HrmBX.png" class="im1">
+            <a class="btn" href="http://buy.duitang.com/buy/item/detail/?id=2333&__urlopentype=pageweb
+"   onmousedown="gaq('/trc_/bigman/_/buy');"><img src="http://img4q.duitang.com/uploads/people/201509/30/20150930134507_RVHwr.png" class="im2"></a>
+            <span class="tx3">
+              （所有明信片售卖所得，将会用于流浪猫食物购买）
+            </span>
+        </div>
+        <span class="bg"></span>
+      </section>
+      <section class="s4">
+        <a  class="share"><img src="http://img4q.duitang.com/uploads/people/201509/30/20150930134630_34vBn.png"></a>
+        <div class="sect-inner">
+            <img src="http://img4q.duitang.com/uploads/people/201510/10/20151010160701_uNRUc.png" class="im1">
+            <a class="link" href="duitang://www.duitang.com/topic/detail/?topic_id=121103"  onmousedown="gaq('/trc_/bigman/_/follow');">
+              <img src="http://img4q.duitang.com/uploads/people/201509/30/20150930132436_5Turs.png" class="im2">
+              <img src="http://img4q.duitang.com/uploads/people/201509/30/20150930132515_ACPBy.png" class="im3">
+            </a>
+            <img src="http://img4q.duitang.com/uploads/people/201509/30/20150930134558_f5GiZ.png" class="im4 copy">
+        </div>
+        <span class="bg"></span>
+        <div class="app-download">
+          <img src="http://img4q.duitang.com/uploads/people/201510/10/20151010155706_SrvMy.png">
+          <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.duitang.main&g_f=991653" onmousedown="gaq('/trc_/bigman/downloadapp');">立即下载</a>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="img-modal">
+    <div class="modal-inner">
+      <img src="http://img4q.duitang.com/uploads/people/201509/30/20150930134655_myiw8.png" class="close">
+      <img src="http://img4q.duitang.com/uploads/people/201509/30/20150930132925_nQEhk.png" class="pic">
+    </div>
+  </div>
+<div class="pg-fix-ft">
+  <div class="pg-share-content">
+    <a href="" id="btn-ft-share-weibo" class="btn btn-share-weibo" onmousedown="gaq('/trc_/bigman/_/sinashare');">
+      <span>新浪微博</span>
+    </a>
+    <a href="" id="btn-ft-share-timeline" class="btn btn-share-wechat-circle" onmousedown="gaq('/trc_/bigman/_/wxsharecircle');">
+      <span>微信朋友圈</span>
+    </a>
+    <a href="" id="btn-ft-share-wx" class="btn btn-share-wechat" onmousedown="gaq('/trc_/bigman/_/wxshare');">
+      <span>微信好友</span>
+    </a>
+  </div>
+</div>
+<div class="wx-tips">
+  <p class="tips">
+    <img src="http://img4q.duitang.com/uploads/people/201508/13/20150813103653_T2dVc.png">
+  </p>
+</div>
+<script src="http://img5.duitang.com/js/4/h5_base.js"></script>
+<script src="http://img5.duitang.com/js/core/comm/h5pack.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+  var isAP, isTB, isDY, isDY5, isDY4, ua = window.navigator.userAgent;
+  var isWB = ua.match(/weibo/i),
+      isYK, isTD;
+  isWB = isWB || 1 * '0';
+  isYK = 1 * '0';
+  isTD = 1 * '0';
+  // DPR android fix
+  if ((document.documentElement.clientWidth !== screen.width || Math.min(document.documentElement.clientWidth, document.documentElement.clientHeight) > 360) && ua.match(/android/i)) {
+      document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=device-width,initial-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi');
+  }
+
+  window.addEventListener('load', function(event) {
+      if (window.lib && window.lib.mtop) {
+          var host = location.href;
+          var env = "m";
+          if (/wapa/.test(host)) {
+              env = 'wapa'
+          } else if (/waptest/.test(host)) {
+              env = 'waptest'
+          }
+          window.env = env;
+          if (window.lib.mtop.config) window.lib.mtop.config.subDomain = env;
+          else lib.config.sysType = env
+      } // lib.mtop + tbc.mtop
+  });
+
+  var rescale = function() {
+      if (document.querySelector('meta[name="viewport"]').getAttribute('content').indexOf('width=320') === 0) {
+          return;
+      }
+      var sh, sw, dr, nr, sc;
+      if (sh = document.documentElement.clientHeight, sw = document.documentElement.clientWidth, dr = 320 / 486, nr = sw / sh, sc = (nr >= dr ? sh / 486 : sw / 320), sc != 1) {
+          if (sw === 480) {
+              document.querySelector('meta[name="viewport"]').setAttribute("content", "width=320, initial-scale=" + sc + ", maximum-scale=" + sc + ", user-scalable=no, target-densitydpi=low-dpi");
+          } else {
+              document.querySelector('meta[name="viewport"]').setAttribute("content", "width=320, initial-scale=" + sc + ", maximum-scale=" + sc + ", user-scalable=no, target-densitydpi=medium-dpi");
+          }
+      }
+  };
+
+  if (window.ua.indexOf('SM-G9209') > 0) {
+      window.addEventListener('load', rescale);
+  } else {
+      rescale();
+  }
+  /**
+   *
+   * @authors johnny.jiang
+   * @date    2015-03-20 18:20:06
+   */
+  (function(a) {
+    a.fn.touchSwiper = function(j) {
+      document.addEventListener('touchmove', function(e) {
+        e.preventDefault();
+      });
+
+      var opt = {
+        parentele: '.cont',
+        ele: ".cont section",
+        active: "cur",
+        direct: 'vertical', //vertical|horizontal
+        min_move_x: 20,
+        min_move_y: 20,
+        pos: 0,
+        end: 0
+      };
+
+      var k = 0,i=this,
+        d = false,
+        g = a(opt.ele).size(),
+        f = a(window).height(),
+        w = a(window).width(),
+        mid;
+      if (j) {
+        a.extend(opt, j);
+        a(opt.ele).css({
+          width: w + 'px',
+          height: f + 'px'
+        });
+        if (opt.direct == 'horizontal') {
+          a(opt.parentele).css({
+            width: w * g + 'px'
+          });
+          a(opt.ele).css({
+            'float': 'left'
+          });
+        }
+      };
+      this.each(function() {
+        this.addEventListener("touchstart", this, false);
+        this.addEventListener("touchmove", this, false);
+        this.addEventListener("touchend", this, false);
+
+        this.handleEvent = function(c) {
+          switch (c.type) {
+            case "touchstart":
+              this.onTouchStart(c);
+              break;
+            case "touchmove":
+              this.onTouchMove(c);
+              break;
+            case "touchend":
+              this.onTouchEnd(mid);
+              break
+          }
+        };
+
+        this.removeListener = function() {
+          this.removeEventListener("touchmove", this.onTouchMove);
+          opt.pos = null;
+          d = false
+        };
+        this.onTouchStart = function(c) {
+          opt.pos=opt.end= this.getTouchPoints(c);
+          mid=0;
+          d = true;
+          this.addEventListener("touchmove", this.onTouchMove, false);
+        };
+        this.onTouchMove = function(m) {
+          opt.end = this.getTouchPoints(m);
+
+          if (opt.direct == 'horizontal') {
+            mid = opt.end.x - opt.pos.x;
+            var midx = mid - k * w;
+            setTimeout(function(){
+
+            },0);
+            i.find('.cont').css({
+              "-webkit-transform": "translate3d(" + midx + "px,0, 0)",
+              "transform": "translate3d(" + midx + "px,0, 0)",
+              '-webkit-transition':'none',
+              'transition': 'none'
+            });
+          } else {
+            mid = opt.end.y - opt.pos.y;
+            var midy = mid - k * f;
+            setTimeout(function(){
+
+            },0);
+            i.find('.cont').css({
+              "-webkit-transform": "translate3d(0," + midy + "px, 0)",
+              "transform": "translate3d(0," + midy + "px, 0)",
+              '-webkit-transition':'none',
+              'transition':'none'
+            });
+          }
+        };
+
+        this.onTouchEnd = function(c) {
+          if (opt.direct == 'horizontal') {
+            if (Math.abs(c) >= opt.min_move_x) {
+              if (c > 0) {
+                if (k > 0) {
+                  k--;
+                  animateTo(k)
+                } else {
+                  setTimeout(function(){
+                    i.find('.cont').css({
+                      "-webkit-transform": "translate3d(0, 0, 0)",
+                      "transform": "translate3d(0, 0, 0)",
+                      '-webkit-transition': ' .5s ease',
+                      'transition': ' .5s ease'
+                    });
+                  },0);
+                }
+              } else {
+                if (k <= g - 2) {
+                  k++;
+                  animateTo(k)
+                } else {
+                  setTimeout(function(){
+                    i.find('.cont').css({
+                      "-webkit-transform": "translate3d(-" + (g - 1) * w + "px,0, 0)",
+                      "transform": "translate3d(-" + (g - 1) * w + "px, 0,0)",
+                      '-webkit-transition': ' .5s ease',
+                      'transition': ' .5s ease'
+                    });
+                  },0);
+                }
+              }
+            } else {
+              setTimeout(function(){
+                i.find('.cont').css({
+                  "-webkit-transform": "translate3d(-" + k * w + "px,0,0)",
+                  "transform": "translate3d( -" + k * w + "px,0,0)",
+                  '-webkit-transition': ' .5s ease',
+                  'transition': ' .5s ease'
+                });
+              },0);
+            }
+          } else {
+            if (Math.abs(c) >= opt.min_move_y) {
+              if (c > 0) {
+                if (k > 0) {
+                  k--;
+                  animateTo(k)
+                } else {
+                  setTimeout(function(){
+                    i.find('.cont').css({
+                      "-webkit-transform": "translate3d(0, 0, 0)",
+                      "transform": "translate3d(0, 0, 0)",
+                      '-webkit-transition': ' .5s ease',
+                      'transition': ' .5s ease'
+                    });
+                  },0)
+                }
+              } else {
+                if (k <= g - 2) {
+                  k++;
+                  animateTo(k)
+                } else {
+                  setTimeout(function(){
+                    i.find('.cont').css({
+                      "-webkit-transform": "translate3d(0,-" + (g - 1) * f + "px, 0)",
+                      "transform": "translate3d(0,-" + (g - 1) * f + "px, 0)",
+                      '-webkit-transition': ' .5s ease',
+                      'transition': ' .5s ease'
+                    });
+                  },0)
+                }
+              }
+            } else {
+              i.find('.cont').css({
+                "-webkit-transform": "translate3d(0, -" + k * f + "px, 0)",
+                "transform": "translate3d(0, -" + k * f + "px, 0)",
+                '-webkit-transition': ' .5s ease',
+                'transition': ' .5s ease'
+              });
+            }
+          }
+        };
+
+        this.getTouchPoints = function(m) {
+          var h = m,
+            l = (typeof m.changedTouches != "undefined") ? m.changedTouches : [m],
+            c = l[l.length - 1],
+            n;
+          if (h.type === "pointer") {
+            n = {
+              x: c.x,
+              y: c.y
+            }
+          } else {
+            if (h.type === "touchstart" || h.type == "touchmove") {
+              n = {
+                x: c.pageX,
+                y: c.pageY
+              }
+            } else {
+              n = {
+                x: m.pageX,
+                y: m.pageY
+              }
+            }
+          }
+          return n
+        };
+        $('.arr,.next').on('click',function(){
+          if (k <= g - 2) {
+            k++;
+            animateTo(k)
+          }
+          });
+        var animateTo = function(e) {
+          var m;
+          if (opt.direct == 'horizontal') {
+            setTimeout(function(){
+              i.find('.cont').css({
+                '-webkit-transition': ' .5s ease',
+                'transition': ' .5s ease',
+                "-webkit-transform": "translate3d( -" + w * e + "px,0, 0)",
+                "transform": "translate3d( -" + w * e + "px,0, 0)",
+              });
+            },0);
+          } else {
+            setTimeout(function(){
+              i.find('.cont').css({
+                 '-webkit-transition': ' .5s ease',
+                'transition': ' .5s ease',
+                "-webkit-transform": "translate3d(0, -" + f * e + "px, 0)",
+                "transform": "translate3d(0, -" + f * e + "px, 0)",
+              });
+            },0)
+          }
+          if (k==g-1) {
+            $('.arr').hide();
+          }
+          else
+          {
+            $('.pg-share-content').removeClass('open');
+            $('.arr').show();
+          }
+          setTimeout(function() {
+            a(opt.ele).eq(e).addClass(opt.active).siblings().removeClass(opt.active);
+            gaq('_trc/bigman/page/p'+(k+1));
+          }, 500);
+        };
+      });
+      return this;
+    }
+  })(Zepto);
+</script>
+<script>
+    var images =[],count = 0;
+    //  $('html,body').find('img').each(function(i) {
+    //   //console.log($(this));
+    //      images[i]=$(this).attr('src');
+    //  });
+    //  $('.img-box li').each(function(){
+    //     var src=$(this).data('img');
+    //     images.push(src);
+    //  });
+    //  var bgs=['http://img4q.duitang.com/uploads/people/201509/30/20150930132702_sXZPf.jpeg','http://img4q.duitang.com/uploads/people/201509/30/20150930133753_FnAJQ.jpeg','http://img4q.duitang.com/uploads/people/201509/30/20150930133833_hYtUM.jpeg','http://img4q.duitang.com/uploads/people/201509/30/20150930133921_jwncE.jpeg'];
+    var bgs=['http://img4q.duitang.com/uploads/people/201509/30/20150930132533_yFXKa.png','http://img4q.duitang.com/uploads/people/201509/30/20150930132552_v4StA.png','http://img4q.duitang.com/uploads/people/201509/30/20150930132611_GSHAE.png','http://img4q.duitang.com/uploads/people/201509/30/20150930132635_ZzGBE.png','http://img4q.duitang.com/uploads/people/201509/30/20150930132702_sXZPf.jpeg','http://img4q.duitang.com/uploads/people/201509/30/20150930133753_FnAJQ.jpeg','http://img4q.duitang.com/uploads/people/201509/30/20150930133833_hYtUM.jpeg','http://img4q.duitang.com/uploads/people/201509/30/20150930133921_jwncE.jpeg'];
+     images=images.concat(bgs);
+     for (var i = 0; i < images.length; i++) {
+         img = new Image;
+         img.src = images[i];
+         img.onload = function() {
+             count++;
+             if(count==images.length-1)
+             {
+                 $('.load').fadeOut(300,function(){
+                     $('.cont section').eq(0).addClass('cur');
+                 });
+                $('.wrap').touchSwiper({
+                    parentele:'.cont',
+                    ele: ".cont section",
+                    //direct:'horizontal',
+                    active: "cur",
+                    min_move_x:20,
+                    min_move_y:20,
+                });
+                gaq('_trc/bigman/page/p1');
+             }
+         }
+     };
+
+     //点击
+     $('.img-box li').on('click',function(){
+        var src=$(this).data('img');
+        if(src){
+          $('.modal-inner img.pic').prop('src',src);
+          $('.img-modal').fadeIn(300);
+        }
+     });
+
+     $('.close').on('touchstart',function(){
+        $('.img-modal').fadeOut(300);
+     });
+     $('.wx-tips').on('touchstart',function(){
+      $(this).hide();
+     })
+</script>
+<script>
+  $(function() {
+    var path = window.location.pathname;
+    var shareData = {
+        imgUrl: "http://img4q.duitang.com/uploads/people/201510/10/20151010175038_dxaWB.jpeg",
+        link: "http://www.duitang.com/guide/mkt/bigman/",
+        desc: "“铲屎官”摄影师和流浪喵的奇妙瞬间",
+        title: "“铲屎官”摄影师和流浪喵的奇妙瞬间"
+      }
+    // 如果在微信中则请求token
+    if ($.G.isWeiXin()) {
+      $.ajax({
+        url: '/napi/wechat/jsticket/',
+        data: {
+          path: path
+        },
+        type: "GET",
+        success: function(jsn) {
+          if (jsn.status == 1) {
+            wx.config({
+              debug: false,
+              appId: 'wxa6b4176bd5453d84',
+              timestamp: jsn.data.timestamp,
+              nonceStr: jsn.data.nonceStr,
+              signature: jsn.data.signature,
+              jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareWeibo', ]
+            });
+            // 分享信息
+            var wxData = {
+              imgUrl:shareData.imgUrl,
+              link:shareData.link,
+              title:shareData.title,
+              desc:shareData.desc
+            };
+            wx.ready(function() {
+              wx.onMenuShareAppMessage({
+                title: wxData.title,
+                desc: wxData.desc,
+                link: wxData.link,
+                imgUrl: wxData.imgUrl,
+                success: function() {
+                  gaq('/_trc/bigman/_/wxsharewx');
+                  $('.wx-tips').hide();
+                },
+                cancel: function() {
+                }
+              });
+              wx.onMenuShareTimeline({
+                title: wxData.title,
+                link: wxData.link,
+                imgUrl: wxData.imgUrl,
+                success: function() {
+                  gaq('/_trc/bigman/sharewxcircle');
+                  $('.wx-tips').hide();
+                },
+                cancel: function() {
+                }
+              });
+              wx.onMenuShareWeibo({
+                title: wxData.title,
+                desc: wxData.desc,
+                link: wxData.link,
+                imgUrl: wxData.imgUrl,
+                success: function() {
+                  gaq('/_trc/bigman/wxsharewb');
+                  $('.wx-tips').hide();
+                },
+                cancel: function() {
+                }
+              });
+            });
+          }
+        }
+      });
+      $('.copy').hide();
+      $('.app-download').show();
+    }if ($.G.isDuiTang()) {
+      // 分享到微博
+      var weiboUrl = 'duitang://www.duitang.com/share/?site=weibo&title=' + shareData.title + '&desc=' + shareData.desc + '&imgurl=' + shareData.imgUrl + '&url=' + shareData.link;
+      // 分享到微信
+      var wxUrl = 'duitang://www.duitang.com/share/?site=weixin&title=' + shareData.title + '&desc=' + shareData.desc + '&scene=session&imgurl=' + shareData.imgUrl + '&url=' + shareData.link;
+      // 分享到朋友圈
+      var wxcircle = 'duitang://www.duitang.com/share/?site=weixin&title=' + shareData.title + '&desc=' + shareData.desc + '&scene=timeline&imgurl=' + shareData.imgUrl + '&url=' + shareData.link;
+
+      $('#btn-ft-share-weibo').attr('href',weiboUrl);
+
+      $('#btn-ft-share-wx').attr('href',wxUrl);
+
+      $('#btn-ft-share-timeline').attr('href',wxcircle);
+
+    } else if ($.G.testUa(/weibo/ig)) {
+      var sinaWeiboHref = 'http://service.weibo.com/share/share.php?appkey=&title=' + shareData.title + '&source=&sourceUrl=&content=' + shareData.desc + '&pic=' + shareData.imgUrl + '&url=' + shareData.link;
+      $('.share').attr('href',sinaWeiboHref);
+      $('.copy').hide();
+      $('.app-download').show();
+    }
+    else{
+      $('.copy').hide();
+      $('.app-download').show();
+    }
+
+    //分享判断
+    $('.share').on('click',function(){
+      if($.G.isDuiTang()){
+        $('.pg-share-content').addClass('open');
+      }
+      else if($.G.isWeiXin()){
+        $('.wx-tips').show();
+      }
+    });
+
+    //点击关注判断
+    $('.link').on('click',function(){
+      if($.G.isDuiTang())
+      {
+        $(this).attr('href','duitang://www.duitang.com/topic/detail/?topic_id=121103');
+      }else{
+        $(this).attr('href','http://m.duitang.com/topic/121103/');
+      }
+    })
+  });
+
+</script>
+</body>
+</html>
