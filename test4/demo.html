@@ -1,0 +1,358 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/GTT/css/front/recommend.css" />
+<title>国土专家注册</title>
+</head>
+<body>
+  <br />
+  <div class="before-register-div">
+    <font color="red">注册前请先查看注意事项<a href="#m1">点此查看</a></font>
+  </div>
+  <br />
+  <br />
+  <form id="form" name="form" method="post"
+    action="">
+    <table border="2" style="border-collapse:collapse;" class="alighc">
+      <caption>
+        <font class="font_style1">安徽国土资源专家推荐表</font>
+      </caption>
+      <tbody>
+      <input type="hidden"  name="expert_id" value="12808"/>
+        <tr class="alighc">
+          <td width="140px">姓名<i>*</i></td>
+          <td width="140px"><input type="text" class="user_name empty"
+            name="name" value="" /></td>
+            <td width="140px">性别<i>*</i></td>
+          
+            <td width="140px"><select class=".heheda2 empty" name="sex">
+                <option value="1" selected="selected">男</option>
+                <option value="2">女</option>
+            </select></td>
+          
+          
+          
+          <td width="190px">出生年月<i>*</i></td>
+          
+          <td width="190px"><input class="birthday timedemo empty" onclick="laydate({istime: true})"
+            name="birthday"
+            value="" />
+          </td>
+          
+          
+        </tr>
+        <tr align="center">
+          <td>所在地<i>*</i></td>
+          <td colspan="2"><input type="text" class="heheda empty"
+            name="location" value="" /></td>
+            <td>身份证号<i>*</i></td>
+          <td colspan="2"><input type="text" class="heheda empty"
+            name="idNumber" value="111111111111111992" /></td>
+        </tr>
+        <tr align="center">
+          <td>工作单位<br />(全称)<i>*</i>
+          </td>
+          <td colspan="2"><input type="text" class="heheda empty"
+            name="workUnit" value="" /></td>
+          <td>在岗状态<i>*</i></td>
+          
+            <td colspan="2"><select class=".heheda2 empty" name="onGuard">
+                <option value="1" selected="selected">是</option>
+                <option value="2">否</option>
+            </select></td>
+          
+          
+          
+        </tr>
+        <tr class="alighc">
+          <td>开始工作时间(例:2014-01-01)<i>*</i></td>
+          
+          <td colspan="2"><input type="text" class="heheda3 timedemo empty" onclick="laydate({istime: true})"
+            name="hireDate"
+            value="" /></td>
+          
+          
+          <td>技术职称<i>*</i></td>
+          <td colspan="2"><input type="text" class="heheda empty" name="title"
+            value="" /></td>
+        </tr>
+        <tr class="alighc">
+          <td>通信地址<i>*</i></td>
+          <td colspan="5"><input type="text" class="heheda3 empty"
+            name="mailAdd" value="" /></td>
+        </tr>
+        <tr class="alighc">
+          <td>邮政编码<i>*</i></td>
+          <td colspan="2"><input type="text" class="heheda empty" id="youbian" 
+            name="postcode" value="" /></td>
+          <td>E-mail<i>*</i></td>
+          <td colspan="2"><input type="text" class="heheda empty" id="email" name="email"
+            value="" /></td>
+        </tr>
+        <tr align="center">
+          <td>办公电话<i>*</i></td>
+          <td colspan="2"><input type="text" class="heheda empty"
+            name="officePhone" value="" /></td>
+          <td>移动电话<i>*</i></td>
+          <td colspan="2"><input type="text" class="heheda empty" id="phone" 
+            name="mobilePhone" value="" /></td>
+        </tr>
+        <tr align="center">
+          <td>家庭住址<i>*</i></td>
+          <td colspan="2"><input type="text" class="heheda empty"
+            name="homeAdd" value="" /></td>
+          <td>住宅电话</td>
+          <td colspan="2"><input type="text" class="heheda"
+            name="homePhone" value="" /></td>
+        </tr>
+        <tr align="center">
+          <td rowspan="2">毕业院校</td>
+          <td>本科<i>*</i></td>
+          <td><input type="text" class="heheda4 empty" name="bachelor"
+            value="" /></td>
+          <td>所学专业<i>*</i></td>
+          <td colspan="2"><input type="text" class="heheda empty"
+            name="bachelorMajor" value="" /></td>
+        </tr>
+        <tr align="center">
+          <td>研究生<i>*</i></td>
+          <td><input type="text" class="heheda4 empty" name="graduate"
+            value="" /></td>
+          <td>所学专业<i>*</i></td>
+          <td colspan="2"><input type="text" class="heheda empty"
+            name="graduateMajor" value="" /></td>
+        </tr>
+        <tr align="center">
+          <td>最后学历<i>*</i></td>
+          <td colspan="2"><input type="text" class="heheda empty"
+            name="lastDegree" value="" /></td>
+          <td>最高学历<i>*</i></td>
+          <td colspan="2"><input type="text" class="heheda empty"
+            name="highestDegree" value="" /></td>
+        </tr>
+        <tr align="center">
+          <td colspan="6">
+              <input type="checkbox" class="heheda5" value="1"
+                name="is_gwy_allowance" /> 享受国务院津贴 
+            
+              <input type="checkbox" class="heheda5" value="1"
+                name="is_sz_allowance" /> 享受省政府津贴
+            
+              <input type="checkbox" class="heheda5" value="1"
+                name="is_academician" /> 院士 
+            
+              <input type="checkbox" class="heheda5" value="1"
+                name="is_doctorial_totur" /> 博士生导师
+            
+              <input type="checkbox" class="heheda5" value="1" name="is_CPA" /> 注册会计师 
+            
+              <input type="checkbox" class="heheda5" value="1"
+                name="is_professorEngineer" /> 教授级高工
+           </td>
+        </tr>
+
+
+
+        <tr height="39" class="alighc">
+          <td colspan="3">参加学术团体</td>
+          <td colspan="3" class="posRel">担任职务<img title="增加一行"
+            class="addLine2" src="/GTT/images/plus.png" /></td>
+        </tr>
+        
+          <tr class="maxIs2" trTypeSec="1" align="center">
+            <td colspan="3"><input type="text" class="heheda4"
+              name="expertAcademicexpert_ids[0].academicBody"
+              value="" /></td>
+            <td colspan="3"><input type="text" class="heheda"
+              name="expertAcademicexpert_ids[0].academicPost"
+              value="" /></td>
+          </tr>
+        
+        
+        
+        <tr align="center">
+          <td colspan="2">现从事国土资源领域<i>*</i></td>
+          <td colspan="4"><input type="text" class="zyly empty" name="field" value=""/></td>
+        </tr>
+        
+        <tr align="center">
+          <td rowspan="4">专业及研究方向(限3项，至少1项)</td>
+          <td colspan="3">现从事专业<i>*</i></td>
+          <td colspan="2">主要研究方向<i>*</i></td>
+        </tr>
+        
+          <tr>
+            <td colspan="3">1 <select class="major" name="expertMajorDirectionexpert_ids[0].major_id"
+              id="major1" func="1" selVal="0">
+                <option value="0">请选择所从事的专业</option>
+            </select>
+            </td>
+            <td colspan="2"><select class="direction" id="direction1"
+              name="expertMajorDirectionexpert_ids[0].direction_id" direcVal="0">
+                <option value="0">请选择主要研究方向</option>
+            </select></td>
+          </tr>
+          <tr>
+            <td colspan="3">2 <select class="major" name="expertMajorDirectionexpert_ids[1].major_id"
+              id="major2" func="2" selVal="0">
+                <option value="0">请选择所从事的专业</option>
+            </select>
+            </td>
+            <td colspan="2"><select class="direction" id="direction2"
+              name="expertMajorDirectionexpert_ids[1].direction_id" direcVal="0">
+                <option value="0">请选择主要研究方向</option>
+            </select></td>
+          </tr>
+          <tr>
+            <td colspan="3">3 <select class="major" name="expertMajorDirectionexpert_ids[2].major_id"
+              id="major3" func="3" selVal="0">
+                <option value="0">请选择所从事的专业</option>
+            </select>
+            </td>
+            <td colspan="2"><select class="direction" id="direction3"
+              name="expertMajorDirectionexpert_ids[2].direction_id" direcVal="0">
+                <option value="0">请选择主要研究方向</option>
+            </select></td>
+          </tr>
+        
+        
+        
+        
+        
+        <tr align="center">
+          <td rowspan="2" id="rowNum1">承担省级以上研究项目(限5项)</td>
+          <td>项目名称</td>
+          <td colspan="2">项目来源与类别</td>
+          <td>截止时间(年月日 例:2014-01-01)</td>
+          <td class="posRel">排名<img title="增加一行" class="addLine"
+            src="/GTT/images/plus.png" /></td>
+        </tr>
+        
+          <tr class="alighc" trType="1">
+            <td><input type="text" class="figure-order"
+              name="expertProjectexpert_ids[0].pojName" /></td>
+            <td colspan="2"><input type="text" class="figure-order-later"
+              name="expertProjectexpert_ids[0].pojSources" /></td>
+            <td><input type="text" class="figure-order-later timedemo" onclick="laydate({istime: true})"
+              name="expertProjectexpert_ids[0].deadline" /></td>
+            <td><input type="text" class="figure-order-later"
+              name="expertProjectexpert_ids[0].pojRanking" /></td>
+          </tr>
+        
+        
+        <tr height="39" class="alighc">
+          <td rowspan="2" id="rowNum2">主要获奖情况(限5项)</td>
+          <td>项目名称</td>
+          <td colspan="2">获奖类别及等级</td>
+          <td>获奖时间(年月日)</td>
+          <td class="posRel">排名<img title="增加一行" class="addLine"
+            src="/GTT/images/plus.png" /></td>
+        </tr>
+        
+          <tr class="alighc" trType="2">
+            <td><input type="text" class="figure-order"
+              name="expertAwardexpert_ids[0].winPojName" /></td>
+            <td colspan="2"><input type="text" class="figure-order-later"
+              name="expertAwardexpert_ids[0].winLevel" /></td>
+            <td><input type="text" class="figure-order-later timedemo" onclick="laydate({istime: true})"
+              name="expertAwardexpert_ids[0].winTime" /></td>
+            <td><input type="text" class="figure-order-later"
+              name="expertAwardexpert_ids[0].winRanking" /></td>
+          </tr>
+        
+        
+        <tr height="39" align="center">
+          <td rowspan="2" id="rowNum3">专利授权情况(限5项)</td>
+          <td>专利名称</td>
+          <td colspan="2">专利类别</td>
+          <td>专利授权时间(年月日)</td>
+          <td class="posRel">排名<img title="增加一行" class="addLine"
+            src="/GTT/images/plus.png" /></td>
+        </tr>
+        
+          <tr class="alighc" trType="3">
+            <td><input type="text" class="figure-order"
+              name="expertPatentexpert_ids[0].patentName" /></td>
+            <td colspan="2"><input type="text" class="figure-order-later"
+              name="expertPatentexpert_ids[0].patentClass" /></td>
+            <td><input type="text" class="figure-order-later timedemo" onclick="laydate({istime: true})"
+              name="expertPatentexpert_ids[0].accTime" /></td>
+            <td><input type="text" class="figure-order-later"
+              name="expertPatentexpert_ids[0].patRanking" /></td>
+          </tr>
+        
+        
+        <tr height="39" align="center">
+          <td rowspan="2" id="rowNum4">代表性论文及著作(限5项)</td>
+          <td>论文及专著名称</td>
+          <td colspan="2">期刊出版社名称</td>
+          <td>发表时间(年月日)</td>
+          <td class="posRel">是否收录SCI/EI/ISTP<img title="增加一行"
+            class="addLine" src="/GTT/images/plus.png" /></td>
+        </tr>
+        
+          <tr class="alighc" trType="4">
+            <td><input type="text" class="figure-order"
+              name="expertPaperexpert_ids[0].paperName" /></td>
+            <td colspan="2"><input type="text" class="figure-order-later"
+              name="expertPaperexpert_ids[0].pubHouse" /></td>
+            <td><input type="text" class="figure-order-later timedemo" onclick="laydate({istime: true})"
+              name="expertPaperexpert_ids[0].postTime" /></td>
+            <td><input type="text" class="figure-order-later"
+              name="expertPaperexpert_ids[0].include" /></td>
+          </tr>
+        
+        
+        <!--  <input type="button" onclick="insRow()" value="增加行 "> -->
+        <tr align="center">
+          <td colspan="3"><input type="button" id="save" class="btns"
+            value="保存修改" /></td>
+          <td colspan="3"><input type="button" id="submit" class="btns"
+            value="提交" /></td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+  <br />
+  <hr />
+  <div class="buttom-div" id="m1">
+    <div class="left-buttom-div">
+      <font color="red">注意事项: </font>
+    </div>
+    <div class="right-buttom-div">
+      <ol>
+        <font color="black">
+          <li>请使用IE浏览器填写该推荐表，否则无法使用“在线打印”功能</li>
+          <li>如果您无法使用“在线打印”，请在注册成功后下载“专家推荐表”到本地打印</li>
+          <li>在岗状态填写“是”或者“否”</li>
+          <li>注册表中的部分信息是必填信息，系统会强制您填写，确实没有请填写“无”</li>
+          <li>此附件为空专家推荐表，如果您需要 ，请点此下载下载附件</li>
+          <li>修改完成后请再次提交</li>
+        </font>
+      </ol>
+    </div>
+  </div>
+  <div class="fixed">点击<img title="增加一行" class="addbtn" src="/GTT/images/plus.png" />增加一行</div>
+  <script type="text/javascript" src="E:/jquery.min.js"></script>
+  <script type="text/javascript">
+    //实例
+    var can = {
+      submitId: "#submit"
+      formId: '#form',
+      url: '../test5/slide.html',
+      type: 'POST',
+      successFunc: function(msg) {
+        alert("成功");
+      },
+      errorFunc: function() {
+        alert("失败");
+      }
+    }
+  </script>
+</body>
+</html>

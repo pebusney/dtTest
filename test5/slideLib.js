@@ -1,6 +1,6 @@
 // JavaScript Document
 
-function lunBo(divId, imgWidth) {
+function lunBo(divId, imgWidth, prevId, nextId) {
     function startMove(obj, json, endFn) {
 
         clearInterval(obj.timer);
@@ -60,6 +60,7 @@ function lunBo(divId, imgWidth) {
             return getComputedStyle(obj, false)[attr];
         }
     }
+
     var oDiv = document.getElementById(divId); //这里
     var oUl = oDiv.getElementsByTagName('ul')[0];
     var aLi = oUl.getElementsByTagName('li');
@@ -74,10 +75,12 @@ function lunBo(divId, imgWidth) {
         aA[i].index = i;
         aA[i].onclick = function() {
 
+            clearInterval(toRunTimer);
+
             for (var i = 0; i < aA.length; i++) {
-                aA[i].className = '';
+                aA[i].id = '';
             }
-            this.className = 'active';
+            this.id = 'active';
 
             startMove(oUl, {
                 left: -this.index * imgWidth
@@ -86,10 +89,12 @@ function lunBo(divId, imgWidth) {
         };
     }
     var toRunTimer = setInterval(toRun, 3000);
-    var iNow = 0;
-    var iNow2 = 0;
+    
     function toRun() {
-
+        var hehe = document.getElementById("active").index;
+        console.log(hehe);
+        var iNow = hehe;
+        var iNow2 = hehe;
         if (iNow == aLi.length - 1) {
             aLi[0].style.position = 'relative';
             aLi[0].style.left = aLi.length * imgWidth + 'px';
@@ -101,10 +106,10 @@ function lunBo(divId, imgWidth) {
         iNow2++;
 
         for (var i = 0; i < aA.length; i++) {
-            aA[i].className = '';
+            aA[i].id = '';
         }
 
-        aA[iNow].className = 'active';
+        aA[iNow].id = 'active';
 
         startMove(oUl, {
             left: -iNow2 * imgWidth
@@ -121,10 +126,12 @@ function lunBo(divId, imgWidth) {
 
     }
 
-    $(document).on("click", ".prev",
-    function() {
-        var hehe = $("#btn a").index($(".active"));
-        // console.log(hehe);
+    // $(document).on("click", ".prev",function() {
+    var oPrev = document.getElementById(prevId);
+    oPrev.onclick = function(){
+        clearInterval(toRunTimer);
+        var hehe = document.getElementById("active").index;
+        console.log(hehe);
         var btnNow = hehe;
         var btnNow2 = hehe;
         if (btnNow == 0) {
@@ -138,10 +145,10 @@ function lunBo(divId, imgWidth) {
         btnNow2--;
 
         for (var i = 0; i < aA.length; i++) {
-            aA[i].className = '';
+            aA[i].id = '';
         }
 
-        aA[btnNow].className = 'active';
+        aA[btnNow].id = 'active';
 
         startMove(oUl, {
             left: -btnNow2 * imgWidth
@@ -156,12 +163,14 @@ function lunBo(divId, imgWidth) {
 
         });
 
-    });
+    }
 
-    $(document).on("click", ".next",
-    function() {
-        var hehe = $("#btn a").index($(".active"));
-        // console.log(hehe);
+    // $(document).on("click", ".next", function() {
+    var oNext = document.getElementById(nextId);
+    oNext.onclick = function(){
+        clearInterval(toRunTimer);
+        var hehe = document.getElementById("active").index;
+        console.log(hehe);
         var next = hehe;
         var next2 = hehe;
         if (next == aLi.length - 1) {
@@ -175,10 +184,10 @@ function lunBo(divId, imgWidth) {
         next2++;
 
         for (var i = 0; i < aA.length; i++) {
-            aA[i].className = '';
+            aA[i].id = '';
         }
 
-        aA[next].className = 'active';
+        aA[next].id = 'active';
 
         startMove(oUl, {
             left: -next2 * imgWidth
@@ -193,11 +202,13 @@ function lunBo(divId, imgWidth) {
 
         });
 
-    });
-    // $(document).on("mouseover","#div1", function(){
-    //   clearInterval(toRunTimer);
-    // });
-    // $(document).on("mouseout","#div1", function(){
-    //   var toRunTimer = setInterval(toRun,3000);
-    // });
+    }
+
+    oNext.onmouseover = function(){
+        clearInterval(toRunTimer);
+    } 
+    oUl.onmouseout = function(){
+        clearInterval(toRunTimer);
+        toRunTimer = setInterval(toRun, 3000);
+    }
 };

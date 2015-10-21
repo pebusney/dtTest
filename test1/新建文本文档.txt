@@ -1,0 +1,1 @@
+自适应布局通常可以结合viewport、百分比、@media更改html的font-size然后单位用rem这三种方式实现，
