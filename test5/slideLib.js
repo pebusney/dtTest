@@ -1,15 +1,15 @@
 function mySlide(divId, imgWidth, prevId, nextId) {
 
-    var oDiv = document.getElementById(divId); //这里
+    // 获取各个所需元素
+    var oDiv = document.getElementById(divId); 
     var oUl = oDiv.getElementsByTagName('ul')[0];
     var aLi = oUl.getElementsByTagName('li');
     var aImg = oUl.getElementsByTagName('img');
-
     var oBtn = document.getElementById('btn');
     var aA = oBtn.getElementsByTagName('a');
-
+    // 设置ul的宽度
     oUl.style.width = aImg.length * imgWidth + 'px';
-
+    // 下方每个序号点击事件
     for (var i = 0; i < aA.length; i++) {
         aA[i].index = i;
         aA[i].onclick = function() {
@@ -32,10 +32,12 @@ function mySlide(divId, imgWidth, prevId, nextId) {
     var toRunTimer = setInterval(toRun, 3000);
     
     function toRun() {
-        var hehe = document.getElementById("active").index;
-        console.log(hehe);
+        var hehe = document.getElementById("active").index;//获取当前视野内的图片是第几个
         var iNow = hehe;
         var iNow2 = hehe;
+        //当当前图片是最后一个是，将第一张图片相对定位到最后一张图片后面，
+        //并将iNow值改为0,即第一张图片显示时iNow的值，第一张图片移动结束后后，又立即取消其相对定位，
+        //这样其后面的图片还会跟着轮播了，给人造成图片在无限轮播的感觉
         if (iNow == aLi.length - 1) {
             aLi[0].style.position = 'relative';
             aLi[0].style.left = aLi.length * imgWidth + 'px';
@@ -52,11 +54,7 @@ function mySlide(divId, imgWidth, prevId, nextId) {
 
         aA[iNow].id = 'active';
 
-        startMove(oUl, {
-            left: -iNow2 * imgWidth
-        },
-        function() {
-
+        startMove(oUl, {left: -iNow2 * imgWidth},function() {
             if (iNow == 0) {
                 aLi[0].style.position = 'static';
                 oUl.style.left = 0;
@@ -66,7 +64,7 @@ function mySlide(divId, imgWidth, prevId, nextId) {
         });
 
     }
-
+    // obj根据json以一定速度移动，并在结束时调用endFn
     function startMove(obj, json, endFn) {
         clearInterval(obj.timer);
         obj.timer = setInterval(function() {
@@ -120,7 +118,7 @@ function mySlide(divId, imgWidth, prevId, nextId) {
     oPrev.onclick = function(){
         clearInterval(toRunTimer);
         var hehe = document.getElementById("active").index;
-        console.log(hehe);
+        // console.log(hehe);
         var btnNow = hehe;
         var btnNow2 = hehe;
         if (btnNow == 0) {
@@ -148,42 +146,12 @@ function mySlide(divId, imgWidth, prevId, nextId) {
     }
 
     var oNext = document.getElementById(nextId);
-    oNext.onclick = function(){
-        clearInterval(toRunTimer);
-        var hehe = document.getElementById("active").index;
-        console.log(hehe);
-        var next = hehe;
-        var next2 = hehe;
-        if (next == aLi.length - 1) {
-            aLi[0].style.position = 'relative';
-            aLi[0].style.left = aLi.length * imgWidth + 'px';
-            next = 0;
-        } else {
-            next++;
-        }
-        next2++;
-        for (var i = 0; i < aA.length; i++) {
-            aA[i].id = '';
-        }
-        aA[next].id = 'active';
-        startMove(oUl, {
-            left: -next2 * imgWidth
-        },
-        function() {
-            if (next == 0) {
-                aLi[0].style.position = 'static';
-                oUl.style.left = 0;
-                next2 = 0;
-            }
-
-        });
-    }
-
+    oNext.onclick = function(){toRun()};
     oNext.onmouseover = function(){
         clearInterval(toRunTimer);
     } 
     oUl.onmouseout = function(){
-        clearInterval(toRunTimer);
+        clearInterval(toRunTimer);//开启定时器之前须清除定时器，避免累加情况
         toRunTimer = setInterval(toRun, 3000);
     }
 

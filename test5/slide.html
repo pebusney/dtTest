@@ -4,20 +4,50 @@
 <meta charset="utf-8" />
 <title>轮播</title>
 <style>
-*{ padding:0; margin:0;}
+*{ padding:0; margin:0;font-family: "黑体";}
 li{ list-style:none;}
-#div1{ margin: 10px auto; width:750px; height:400px; position:relative; overflow:hidden;}
-#div1 ul{ position:absolute; left:0;}
+#div1{ 
+    margin: 10px auto; 
+    width:750px; 
+    height:400px; 
+    position:relative; 
+    overflow:hidden;
+}
+#div1 ul{ 
+    position:absolute; 
+    left:0;
+}
 #div1 ul li{ float:left;}
-#div1 ul li img{ position:relative; left:0; width:750px; height:400px;}
-
-#btn{ position:absolute; width:100%; text-align:center; bottom:10px;}
-#btn a{ cursor:pointer; display:inline-block; width:30px; height:30px; border-radius: 50%; background:#666666; color: #fff;text-align: center;line-height: 30px;text-decoration: none;font-weight: bold;}
-#btn a#active { background: #fff;color: #666;} 
+#div1 ul li img{ 
+    position:relative; 
+    left:0; 
+    width:750px; 
+    height:400px;
+}
+#btn{ 
+    position:absolute;
+    width:100%; 
+    text-align:center; 
+    bottom:10px;
+}
+#btn a{ 
+    cursor:pointer; 
+    display:inline-block; 
+    width:30px; 
+    height:30px; 
+    border-radius: 50%; 
+    background:#666666; 
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+#btn a#active { 
+    background: #fff;
+    color: #666;
+} 
 #btn a:hover{ background:white;}
-
-*html .ie6_out{ margin-left:1000px; zoom:1;}
-*html .ie6_in{ position:relative; float:left; margin-left:-1000px;}
 #prev {
     position: absolute;
     top: 176px;
@@ -41,16 +71,11 @@ li{ list-style:none;}
 }
 
 #next:hover {
-    background-position: -582px -293px
+    background-position: -582px -293px;
 }
 </style>
 </head>
 <body>
-<!--[if lte IE 6]>
-<div class="ie6_out">
-<div class="ie6_in">
-<![endif]-->
-
 <div id="div1">
   <ul>
     <li><img src="images/slide1.jpeg" /></li>
@@ -71,15 +96,11 @@ li{ list-style:none;}
     <i id="next"></i>
   </div>
 </div>
-
-<!--[if lte IE 6]>
-</div>
-</div>
-<![endif]-->
 </body>
 <script type="text/javascript" src="slideLib.js"></script>
 <script type="text/javascript">
 window.onload=function(){
+  //四个参数：包裹整个轮播图的div的id，轮播可是区域宽度/亦为图片宽度，向前元素的id，向后元素的id
   mySlide("div1", 750, "prev", "next");
 }
 </script>

@@ -1,12 +1,7 @@
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="/GTT/css/front/recommend.css" />
 <title>国土专家注册</title>
 </head>
 <body>
@@ -338,13 +333,13 @@
     </div>
   </div>
   <div class="fixed">点击<img title="增加一行" class="addbtn" src="/GTT/images/plus.png" />增加一行</div>
-  <script type="text/javascript" src="E:/jquery.min.js"></script>
+  <script src="jquery.min.js"></script>
+  <script src="ajaxSubmit.js"></script>
   <script type="text/javascript">
     //实例
     var can = {
-      submitId: "#submit"
       formId: '#form',
-      url: '../test5/slide.html',
+      url: '/GTT/experts/commitExpertRecommendTable',
       type: 'POST',
       successFunc: function(msg) {
         alert("成功");
@@ -352,7 +347,8 @@
       errorFunc: function() {
         alert("失败");
       }
-    }
+    };
+    $(document).on("click", "#submit",function(){ajaxSubmit(can)});
   </script>
 </body>
 </html>

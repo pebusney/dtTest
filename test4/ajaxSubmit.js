@@ -1,6 +1,5 @@
-$(document).on("click", can.submitId,function(){ajaxSubmit(can)});
 function ajaxSubmit(can) {
-  var data = $(can.formId).serializeArray();
+  var data = $(can.formId).serializeArray();//序列化表单元素
   var dataArr = [];
   for(item in data){
     var hehe = data[item].name+'"'+":"+'"'+data[item].value;
