@@ -1,4 +1,4 @@
-实现一屏一屏滑动：
+实现一屏一屏滑动： 
 <!DOCTYPE html>
 <html>
 <head>
